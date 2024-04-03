@@ -2,8 +2,8 @@
 
 /* Base */
 :root {
-    --clr-primary: deeppink;
-    --clr-secondary: #272d36;
+    --clr-primary: rgb(170, 2, 92);
+    --clr-secondary: #0d0f11;
 }
 
 *,
@@ -68,7 +68,7 @@ strong {
     height: 700px;
 }
 
-.section-meals .txt{
+.section-meals .txt {
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -191,70 +191,61 @@ strong {
     transition: all 0.4s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     transform: rotate(5deg);
 }
 
 /* End Base */
 
-/* Menu */
-nav {
-    padding: 0 33px;
-    height: 80px;
+/* navbar */
+.navbar {
     width: 100%;
     position: fixed;
-    top: 0;
     background: white;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    z-index: 22;
 }
 
-label.logo {
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 30px;
-    font-weight: 700;
+.navbar-brand {
+    font-size: 33px;
+    font-weight: bold;
 }
 
-nav ul {
-    float: right;
-    margin-right: 20px;
+.navbar-brand:hover {
+    color: white;
+    border-radius: 36px 0px 36px;
+    background-color: #41225d;
+    transition: 0.5s;
 }
 
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
-    font-size: 18px;
-    padding: 7px 13px;
-    text-decoration: none;
-    color: var(--clr-secondary);
-}
-
-.menu a.active,
-.menu a:hover {
+.navbar a:hover {
     border-bottom: 2px solid var(--clr-primary);
     transition: 0.3s;
 }
 
-.checkbtn {
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.Search {
+    font-weight: bold;
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid rgb(62, 22, 49);
+    font-family: 'Rubik', sans-serif;
 }
 
-#check {
-    display: none;
+.btn0 {
+
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgb(135, 7, 123);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
 }
 
-/* End Menu */
+/* End navbar */
 
 /* Hero Section */
 #hero-section {
@@ -282,7 +273,8 @@ nav ul li a {
     box-shadow: 1px 2px 5px 4px solid rgb(27, 27, 27);
 
 }
-.visual img:hover{
+
+.visual img:hover {
     box-shadow: 5px 2px 2px 2px solid rgb(215, 117, 117);
 }
 
@@ -336,7 +328,7 @@ nav ul li a {
 
 /* Restaurant Menu */
 
-#menu{
+#menu {
     background-color: whitesmoke;
 }
 
@@ -347,15 +339,20 @@ nav ul li a {
 }
 
 .category li {
+    font-weight: bold;
+    letter-spacing: 3px;
     display: inline-block;
     margin: 0 15px;
     font-size: 20px;
-    font-weight: 500;
     cursor: pointer;
 }
 
-.category li.active {
-    color: deeppink;
+.category li:hover {
+    text-align: center;
+    border-radius: 360px;
+    background-color: rgb(119, 30, 131);
+    color: white;
+    transition: .7s;
 }
 
 .restaurant-menu {
@@ -484,20 +481,33 @@ details[open] summary~* {
 
 /* Footer */
 .footer {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
     background: white;
     color: black;
     padding: 30px 0;
 }
 
-.footer .container {
-    justify-content: space-between;
-    align-items: flex-start;
+.footer ul li:hover {
+    color: white;
+    border-radius: 360px;
+    background-color: #000407;
 }
+
 
 .footer h2 {
     font-size: 22px;
     margin-bottom: 10px;
     color: deeppink;
+}
+
+.footer h2:hover {
+    text-align: center;
+    color: white;
+    border-radius: 360px;
+    background-color: #000;
+    transition: 0.5s;
 }
 
 .footer ul {
@@ -519,6 +529,13 @@ details[open] summary~* {
     padding: 20px 0;
     margin-top: 30px;
     border-top: 1px solid #b2b2b2;
+}
+
+.copyright span p:hover {
+    background-color: rgb(25, 23, 23);
+    border: radius 360px;
+    transition: 0.5s;
+    color: white;
 }
 
 /* End Footer */
