@@ -202,12 +202,19 @@ strong {
     width: 100%;
     position: fixed;
     background: white;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(215, 193, 193, 0.2) 0px 2px 8px 0px;
 }
 
 .navbar-brand {
     font-size: 33px;
     font-weight: bold;
+}
+
+.navbar-collapse ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
 }
 
 .navbar-brand:hover {
@@ -218,6 +225,7 @@ strong {
 }
 
 .navbar a:hover {
+    text-align: center;
     border-bottom: 2px solid var(--clr-primary);
     transition: 0.3s;
 }
@@ -229,7 +237,7 @@ strong {
     border-radius: 60px;
     outline: none;
     margin-right: -35px;
-    border: 2px solid rgb(62, 22, 49);
+    border: 2px solid rgb(230, 47, 169);
     font-family: 'Rubik', sans-serif;
 }
 
@@ -239,7 +247,7 @@ strong {
     width: 40%;
     outline: none;
     border: none;
-    background: rgb(135, 7, 123);
+    background: rgb(223, 29, 155);
     color: white;
     border-radius: 60px;
     font-weight: 700;
@@ -343,15 +351,16 @@ strong {
     letter-spacing: 3px;
     display: inline-block;
     margin: 0 15px;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 .category li:hover {
     text-align: center;
     border-radius: 360px;
-    background-color: rgb(119, 30, 131);
+    background-color: rgb(252, 31, 168);
     color: white;
+    padding: 5px;
     transition: .7s;
 }
 
@@ -373,7 +382,10 @@ strong {
 }
 
 .menu-item img {
+    align-items: center;
+    border-radius: 10px;
     width: 100%;
+    height: 200px;
 }
 
 .order {
@@ -396,8 +408,7 @@ strong {
 }
 
 .location {
-    font-size: 18px;
-    font-weight: 500;
+    text-align: center;
 }
 
 /* End Restaurant Menu */
@@ -444,6 +455,19 @@ details[open] summary~* {
 #app {
     text-align: center;
     background-color: whitesmoke;
+}
+
+marquee {
+    box-shadow: 4px 2px 9px 4px black;
+    text-shadow: 2px 5px 4px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(215, 50, 141);
+}
+
+marquee:hover {
+    background-color: #ffd43b;
+    transition: ;
 }
 
 .app-store {
